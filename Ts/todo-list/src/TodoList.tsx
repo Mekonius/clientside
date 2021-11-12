@@ -1,5 +1,5 @@
-import React from "react";
-import { TodoListItem } from "./TodoListItem";
+import React from 'react';
+import { TodoListItem } from './TodoListItem';
 
 interface Props {
     todos: Todo[];
@@ -15,4 +15,4 @@ export const TodoList: React.FC<Props> = ({todos, toggleTodo}) => {
             ))}
         </ul>
     )
-} ;
+};
