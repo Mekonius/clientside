@@ -1,5 +1,6 @@
 <template>
   <div>
+    <DiscordSidebar />
     <h1 class="text-5xl text-center font-bold justify-center p-10">Todo List</h1>
     <div class="mb-2">
       <form @submit.prevent="addTodo()">
@@ -24,9 +25,13 @@
 
 <script>
 import { ref } from 'vue';
+import DiscordSidebar from './components/DiscordSidebar.vue';
 
 export default {
   name: 'App',
+  components: {
+    DiscordSidebar
+  },
   setup() {
     const newTodo = ref("");
     const defaultData = [
