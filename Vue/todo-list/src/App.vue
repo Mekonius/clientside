@@ -11,6 +11,7 @@
 
     <ul class="flex flex-col justify-center">
       <li class="mt-2 border-b-4 border-yellow-600" v-for="(todo, index) in todos" :key="index">
+        <input type="checkbox" v-model="todo.done">
         <span style="line-height: 38px;" class="pl-2" :class="{done: todo.done}" @click="doneTodo(todo)">
           {{ todo.content }}
         </span>
