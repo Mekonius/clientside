@@ -3,7 +3,7 @@
     <h1 class="text-5xl text-center font-bold justify-center p-10">Todo List</h1>
     <div class="mb-2">
       <form @submit.prevent="addTodo()">
-        <h1 class="flex text-lg">New Todo: </h1>
+        <h1 class="flex text-lg pl-2">New Todo: </h1>
         <input class="rounded p-4 border-t border-1 text-gray-600 border-gray-200 bg-white" v-model="newTodo" name="newTodo" autocomplete="off" placeholder="Add Todo...">
         <button class="bg-blue-500 text-white font-bold p-4 px-5 pb-3 border-b-4 rounded">+ Add</button>
       </form>
@@ -11,7 +11,7 @@
 
     <ul class="flex flex-col justify-center">
       <li class="mt-2 border-b-4 border-yellow-600" v-for="(todo, index) in todos" :key="index">
-        <span style="line-height: 38px;" :class="{done: todo.done}" @click="doneTodo(todo)">
+        <span style="line-height: 38px;" class="pl-2" :class="{done: todo.done}" @click="doneTodo(todo)">
           {{ todo.content }}
         </span>
         <button class="float-right bg-red-500 mb-2 hover:bg-gray-500 text-white font-bold p-1 pb-1 border-b-4 px-3 border-red-700 rounded" @click="removeTodo(index)">Remove</button>
@@ -73,6 +73,10 @@ export default {
 </script>
 
 <style>
+.done {
+  text-decoration: line-through;
+}
+
 .px-3 {
     padding-left: 0.85rem !important;
     padding-right: 0.85rem !important;
