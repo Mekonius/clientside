@@ -62,7 +62,7 @@ export default {
       localStorage.setItem("todos", storage);
     }
 
-    
+
     return {
       todos,
       newTodo,
