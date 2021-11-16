@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: retro_gaming;
+    src: url('../fonts/RetroGaming.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.done{
+    text-decoration: line-through;
+}
