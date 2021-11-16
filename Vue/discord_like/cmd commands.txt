@@ -1,0 +1,21 @@
+Create Vue project:
+
+micha@MSN-ThinkPad-E15 MINGW64 ~/source/repos/clientside/Vue (Michael)
+$ vue create discord_like
+
+test:
+$ cd discord_like
+$ npm run serve
+
+Tailwind:
+micha@MSN-ThinkPad-E15 MINGW64 ~/source/repos/clientside/Vue/discord_like (Michael)
+$ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+micha@MSN-ThinkPad-E15 MINGW64 ~/source/repos/clientside/Vue/discord_like (Michael)
+$ npm uninstall tailwindcss postcss autoprefixer
+
+$ vue add tailwind
+
+$ npx tailwindcss init -p
+
+
